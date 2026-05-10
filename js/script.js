@@ -207,9 +207,12 @@
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) addErr("Ievadi derīgu e-pasta adresi.");
 
       var phoneRaw = String(fd.get("phone") || "").trim();
-      var digits = lvPhoneDigits(phoneRaw || "");
-      if (digits.length < 8 || digits.length > 11)
-        addErr("Tālruņim jāietver vismaz 8 cipari (iekļaujot valsts kodu vai bez tā).");
+      var digits = lvPhoneDigits(phoneRaw);
+      if (phoneRaw.length > 0) {
+        if (digits.length < 8 || digits.length > 13) {
+          addErr("Ja norādi tālruni, iekļauj vismaz astoņus ciparus vai starptautisko formātu ar kodu (+371 …).");
+        }
+      }
 
       var birth = String(fd.get("birthdate") || "");
       var age = approximateAgeYears(birth);
@@ -264,7 +267,7 @@
 
       appendRow(resultInner, "Vārds, uzvārds", fullName);
       appendRow(resultInner, "E-pasts", email);
-      appendRow(resultInner, "Tālrunis", phoneRaw || digits);
+      appendRow(resultInner, "Tālrunis", phoneRaw ? phoneRaw : "nav norādīts");
       appendRow(resultInner, "Vecums (apm.)", String(approximateAgeYears(birth)) + " gadi");
       appendRow(resultInner, "Līmenis", levelText);
       appendRow(resultInner, "Nodarbību veids", planLbl);

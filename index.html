@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>13th Round — boksa klubs</title>
+    <title>Boksa klubs „13th Round” — Preiļi</title>
     <meta
       name="description"
-      content="13th Round — boksa zāles tīmekļa vietne: grafiks, galerija, pieteikums un BUJ latviešu valodā."
+      content="„13th Round” — boksa klubs Preiļos. Grupas nodarbības: pirmdiena, trešdiena, piektdiena 19:00–20:00."
     />
+    <link rel="icon" href="images/logo.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -16,7 +17,21 @@
     <header class="header-site">
       <div class="header-site-inner">
         <div class="nav-bar">
-          <a class="nav__brand" href="#hero">13th Round</a>
+          <a class="nav__brand" href="#hero" aria-label="„13th Round”, Preiļi">
+            <img
+              class="nav__brand-mark"
+              src="images/logo.png"
+              width="112"
+              height="112"
+              alt=""
+              aria-hidden="true"
+              decoding="async"
+            />
+            <span class="nav__brand-text-wrap">
+              <span class="nav__brand-title">13th Round</span>
+              <span class="nav__brand-sub">Preiļi · kopš 2020</span>
+            </span>
+          </a>
           <button
             type="button"
             id="nav-toggle"
@@ -50,54 +65,78 @@
 
     <main>
       <section id="hero" class="hero" aria-labelledby="hero-title">
-        <div class="hero__badge">Boksa klubs</div>
+        <div class="hero__badge">Preiļi · kopš 2020</div>
         <h1 id="hero-title" class="hero__title">
           <span class="hero__title-line hero__title-line--gold">13th</span>
           <span class="hero__title-line hero__title-line--white">Round</span>
         </h1>
         <p class="hero__tagline">
-          Divpadsmit raundi izšķir cīņu. Tavs trīspadsmitais raunds izšķir, par ko tu kļūsti.
-          Tehnisks bokss, īsta slodze un kopiena, kurā patīkami svīst.
+          Lokāls boksa klubs ar fokusu uz pamatiem un komandas gaisotni. Kopā trenējamies tikpat daudz kā
+          cīnāmies — ar cieņu pret zāli un vienam pret otru.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#pieteikums">Pieteikties izmēģinājuma nodarbībai</a>
-          <a class="btn btn--ghost" href="#schedule">Skatīt grafiku</a>
+          <a class="btn btn--primary" href="#pieteikums">Pieteikt izmēģinājumu</a>
+          <a class="btn btn--ghost" href="#schedule">Grafiks</a>
         </div>
         <dl class="hero__stats">
           <div class="hero__stat">
-            <dt>Darba laiks</dt>
-            <dd>6 dienas nedēļā</dd>
+            <dt>Vieta</dt>
+            <dd>Preiļi</dd>
           </div>
           <div class="hero__stat">
-            <dt>Līmeņi</dt>
-            <dd>Iesācēji → rings</dd>
+            <dt>Treini</dt>
+            <dd>Pir · Treš · Piektd.</dd>
           </div>
           <div class="hero__stat">
-            <dt>Treneri</dt>
-            <dd>Licencētie treneri</dd>
+            <dt>Laiks</dt>
+            <dd>19:00–20:00</dd>
           </div>
         </dl>
+
+        <div class="hero__banner">
+        <figure class="hero__banner-inner">
+          <img
+            src="images/gallery/grupa-zale.png"
+            alt="Boksa kluba dalībnieki ringā kopā ar treneriem"
+            width="1200"
+            height="675"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption>Komanda kopā ringā klubā Preiļos.</figcaption>
+        </figure>
+        </div>
       </section>
 
-      <section id="about" class="section section--split" aria-labelledby="about-heading">
-        <div class="section__intro">
+      <section id="about" class="section section--split about-section" aria-labelledby="about-heading">
+        <div class="about-copy">
           <h2 id="about-heading" class="section__heading"><span class="accent-gold">Klubs</span></h2>
           <p class="section__lede">
-            Šī lapa izstrādāta kā mācību uzdevuma daļa: oriģināls apraksts par izdomātu boksa zāli „13th
-            Round”. Fakti par darba laiku, adresi un cenu ir vietturu piemēri — autoram tie jānomaini pret
-            patiesiem datiem publikācijas brīdī.
+            „13th Round” ir boksa klubs Preiļos — vieta tiem, kas vēlas kustību, kārtību un sajūtu, kas atgādina īstu
+            zāli: sviedri, smaids starp raundiem un līmenim atbilstošs progress.
           </p>
           <p class="section__lede">
-            Pamatā būs kāju darbs, dabīga pozīcija un kombinācijas, kas nedod pretiniekam rimtu; zālē cenšamies,
-            lai līmenis būtu skaidrs, bet attieksme draudzīga.
+            Gaidām gan jaunos iesācējus un jauniešus, gan pieaugušos, kuri grib vai nu trenēt sevi, vai vērsties uz
+            sacensībām — solīti pa solim.
           </p>
+          <ul class="pill-list">
+            <li class="pill pill--red">Grupa</li>
+            <li class="pill pill--teal">Visi līmeņi</li>
+            <li class="pill pill--violet">Jaunieši un pieaugušie</li>
+            <li class="pill pill--amber">Ringa sajūta</li>
+          </ul>
         </div>
-        <ul class="pill-list">
-          <li class="pill pill--red">Mazās grupās</li>
-          <li class="pill pill--teal">Brīvie treniņi</li>
-          <li class="pill pill--violet">Jaunieši un pieaugušie</li>
-          <li class="pill pill--amber">Sacensību stūrītis</li>
-        </ul>
+        <figure class="about-shot">
+          <img
+            src="images/gallery/treneri.png"
+            alt="Treneris ar kluba kreklu kluba vidē."
+            width="900"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>Trenerība un vadība ikdienā zālē.</figcaption>
+        </figure>
       </section>
 
       <section id="training" class="section cards" aria-labelledby="training-heading">
@@ -108,164 +147,100 @@
           <article class="feature-card feature-card--red">
             <h3 class="feature-card__title">Boksa pamati</h3>
             <p class="feature-card__text">
-              Pozīcija, pretmetiens, distance, kombinācijas un aizsardzība — līdz tas kļūst par dabisku
-              kustību.
+              Pozīcija, kājas un rokas, distance un darbs pret sitieniem — atkārto līdz kustība kļūst skaidra.
             </p>
           </article>
           <article class="feature-card feature-card--teal">
-            <h3 class="feature-card__title">Fiziskā sagatavošana</h3>
+            <h3 class="feature-card__title">Fiziskais fonds</h3>
             <p class="feature-card__text">
-              Maisi, lecinš, slidas, kad vietas pietiek — cardio, kas jūtas kā boksā, nevis īslaicīgas modes
-              klases.
+              Maisi un kardio treniņu slodze, kas uztura boksu, nevis aizvieto pamatus.
             </p>
           </article>
           <article class="feature-card feature-card--gold">
-            <h3 class="feature-card__title">Sparings</h3>
+            <h3 class="feature-card__title">Kontroles spārings</h3>
             <p class="feature-card__text">
-              Kontrolēti raundi līmeniem, kas sagatavoti — ar trenera uzraudzību, aizsargām un skaidru mērķi.
+              Vēlāk, kad treneri redz sagatavošanos — strukturēti raundi ar drošību un līmenī atbilstošiem ierobežojumiem.
             </p>
           </article>
         </div>
       </section>
 
-      <!--
-        Attēlu avoti: vietturus veido paša projekta SVG favā mapē images/gallery/ (vietturis-*.svg).
-        Ja izmanto foto no interneta, obligāti pievieno atsauci uz pirmavotu (skat. kājeni vai blakus parakstu).
-      -->
       <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
         <h2 id="gallery-title" class="section__heading section__heading--center">
-          <span class="accent-violet">Fotogalerija</span>
+          <span class="accent-violet">Galerija</span>
         </h2>
-        <p class="gallery__intro">
-          Nospied attēlu, lai palielinātu („lightbox”), vai izvēlies kategoriju un filtru. Savus foto saliec
-          mapē <code>images/gallery/</code> un nomaini ceļus <code>&lt;img src="..."&gt;</code>.
-        </p>
+        <p class="gallery__intro">Nospied attēlu, lai aplūkotu lielākā izmērā. Atlasīt kategoriju var pogās zemāk.</p>
         <div class="gallery__filters">
           <button type="button" class="gallery-filter is-active" data-filter="visi">Visi</button>
           <button type="button" class="gallery-filter" data-filter="zale">Zāles mirkļi</button>
           <button type="button" class="gallery-filter" data-filter="komanda">Komanda</button>
           <button type="button" class="gallery-filter" data-filter="tehnika">Teknika</button>
         </div>
-        <p class="gallery__filters-hint">
-          Filtrs liek klasi <code>is-hidden</code> kadriem ar <code>data-gallery-tag</code>, kad atlasītā pogā nevajag rādīt
-          šo grupu (<code>js/script.js</code> funkcija <code>initGalleryFilters()</code>).
-        </p>
-        <div class="gallery__grid">
-          <figure class="gallery__item gallery__item--wide" data-gallery-tag="zale">
-            <button
-              type="button"
-              class="gallery__thumb"
-              aria-label="Palielināt fotogrāfiju — treniņš plašākā kadra"
-            >
+        <div class="gallery__grid gallery__grid--split">
+          <figure class="gallery__item gallery__item--tall" data-gallery-tag="zale tehnika">
+            <button type="button" class="gallery__thumb" aria-label="Palielināt attēlu: stūrītis ringā">
               <img
-                src="images/gallery/vietturis-01.svg"
-                alt="Zāles mākslīgs vietturu kadrs līdz foto no zāles"
-                width="1600"
-                height="900"
+                src="images/gallery/sturitis-ringa.png"
+                alt="Bokseris stūrītī saņem padomu no trenera"
+                width="800"
+                height="1100"
                 loading="lazy"
                 decoding="async"
               />
             </button>
-            <figcaption>Treniņš plašākā līnijā</figcaption>
+            <figcaption>Starplaiks stūrītī — konsultācija pirms nākamā raunda.</figcaption>
           </figure>
 
-          <figure class="gallery__item" data-gallery-tag="tehnika">
-            <button type="button" class="gallery__thumb" aria-label="Palielināt — maiss">
-              <img
-                src="images/gallery/vietturis-02.svg"
-                alt="Maisam līdzīgs siluets —vietturus"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-              />
-            </button>
-            <figcaption>Maisi un ēnas</figcaption>
-          </figure>
+          <div class="gallery__stack">
+            <figure class="gallery__item gallery__item--square" data-gallery-tag="komanda">
+              <button type="button" class="gallery__thumb" aria-label="Palielināt attēlu: balvu plaukts">
+                <img
+                  src="images/gallery/balvas.png"
+                  alt="Kluba sasniegumu medaļas un diplomi"
+                  width="900"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <figcaption>Sasniegumi un dokumenti uz kluba plaukta.</figcaption>
+            </figure>
 
-          <figure class="gallery__item" data-gallery-tag="komanda">
-            <button type="button" class="gallery__thumb" aria-label="Palielināt — komandas mirklis">
-              <img
-                src="images/gallery/vietturis-03.svg"
-                alt="Komandas mirklis vietturos"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-              />
-            </button>
-            <figcaption>Pēc kopējā raunda</figcaption>
-          </figure>
-
-          <figure class="gallery__item" data-gallery-tag="tehnika komanda">
-            <button type="button" class="gallery__thumb" aria-label="Palielināt — tehnikas rinda">
-              <img
-                src="images/gallery/vietturis-04.svg"
-                alt="Trenera vadītas kustības shema vietturos"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-              />
-            </button>
-            <figcaption>Teknika ar treneri</figcaption>
-          </figure>
-
-          <figure class="gallery__item gallery__item--tall" data-gallery-tag="zale">
-            <button type="button" class="gallery__thumb" aria-label="Palielināt — stūrītis">
-              <img
-                src="images/gallery/vietturis-05.svg"
-                alt="Stūrīšu silueta viettris"
-                width="800"
-                height="1000"
-                loading="lazy"
-                decoding="async"
-              />
-            </button>
-            <figcaption>Stūrītis pirms starta</figcaption>
-          </figure>
-
-          <figure class="gallery__item" data-gallery-tag="komanda">
-            <button type="button" class="gallery__thumb" aria-label="Palielināt — gatavojas raundam">
-              <img
-                src="images/gallery/vietturis-06.svg"
-                alt="Priekškars gatavojas līnijām viettris"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-              />
-            </button>
-            <figcaption>Gatavi raundam</figcaption>
-          </figure>
+            <figure class="gallery__item gallery__item--logo" data-gallery-tag="komanda">
+              <button type="button" class="gallery__thumb" aria-label="Palielināt kluba logotipa zīmolu">
+                <img
+                  src="images/logo.png"
+                  alt="Kluba aplītis ar tekstu „BOKSA KLUBS”, „13TH ROUND”, „EST 2020”"
+                  width="560"
+                  height="560"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <figcaption>Zīmes aplīča versija drukā un digitāli.</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
       <section id="schedule" class="section timetable" aria-labelledby="schedule-heading">
         <div class="timetable__inner">
           <h2 id="schedule-heading" class="section__heading">
-            <span class="accent-teal">Grafiks (piemērs)</span>
+            <span class="accent-teal">Grafiks</span>
           </h2>
-          <p class="timetable__note">
-            Laiki un nosaukumi ir piemēri mācību darbam — aizvieto ar kluba īsto grafiku, kad vietne būs dzīvs
-            piedāvājums.
-          </p>
+          <p class="timetable__note">Grupa — trīs reizes nedēļā, viens vakara laiks visām dienām.</p>
           <div class="timetable__rows">
             <div class="timetable__row timetable__row--odd">
-              <span class="timetable__day">Pirmd. / Trešd.</span>
-              <span class="timetable__slots">Rīta cilvēki 06:30 · vakars 18:00 un 19:15</span>
+              <span class="timetable__day">Pirmdiena</span>
+              <span class="timetable__slots">19:00 – 20:00</span>
             </div>
             <div class="timetable__row">
-              <span class="timetable__day">Otrd. / Ceturtd.</span>
-              <span class="timetable__slots">Tehnika 17:30 · maiss un līmenis 18:45</span>
+              <span class="timetable__day">Trešdiena</span>
+              <span class="timetable__slots">19:00 – 20:00</span>
             </div>
             <div class="timetable__row timetable__row--odd">
-              <span class="timetable__day">Piektd.</span>
-              <span class="timetable__slots">„Fight shape” 18:00 · brīva zāle 19:30</span>
-            </div>
-            <div class="timetable__row">
-              <span class="timetable__day">Sestd.</span>
-              <span class="timetable__slots">Visiem līmeņiem 09:30 · treneru stūrītis 11:00</span>
+              <span class="timetable__day">Piektdiena</span>
+              <span class="timetable__slots">19:00 – 20:00</span>
             </div>
           </div>
         </div>
@@ -273,29 +248,27 @@
 
       <section id="faq" class="section faq-section" aria-labelledby="faq-heading">
         <h2 id="faq-heading" class="section__heading section__heading--center">
-          <span class="accent-teal">Biežāk uzdotie jautājumi</span>
+          <span class="accent-teal">BUJ</span>
         </h2>
         <div class="faq-list">
           <details class="faq-details" open>
-            <summary>Vai vajag savus cimdus?</summary>
+            <summary>Vai vajadzīgi paši boksa cimdi?</summary>
             <p>
-              Pietiek ar parastiem šķēršču apaviem līdz pirmajai nedēļai; cimdos palīdzam izvēlēties un parāda
-              kā uztīt bintus. Īres cimdi ir vietturas piemērs — precizē vietējā cenrādī brīdi, kad vietne būs īsts
-              piedāvājums.
+              Pietiek ar kārtējo sporta ģērbu un elastīgu apavu. Pirmajās nedēļās pastāstīsim par bintiem un izmantošanu;
+              arī īpašām cimdiem var palīdzēt izvēli.
             </p>
           </details>
           <details class="faq-details">
-            <summary>Kad saprotu, ka var iet sparingā?</summary>
+            <summary>Kas jāņem līdzi?</summary>
             <p>
-              Kad treneri redz stabili pamatus, pašvērtējumu un veselību pārbaudi. Nedrūpojam ar spēku — līmenim
-              jānobriest arī garīgi.
+              Dzeramais šķidrums pret slodzi, mazais dvielis ja vēlies, un laba nostāja — tas pārējais būs kārtībā kopā ar
+              treneriem zālē.
             </p>
           </details>
           <details class="faq-details">
-            <summary>Kā saglabāt datus GDPR nozīmē?</summary>
+            <summary>Vai forma pati uzreiz nosūta ziņu uz klubu?</summary>
             <p>
-              Šī vietne kā statiska lapa nedara servera saglabāšanu: pēc „Nosūtīt” datus aplūko vien JavaScript uz
-              ekrāna. Produkcijas gatavībai jāpapildina ar HTTPS un skaidru privātumu.
+              Lapā tas ir kā kopsavilkums zem formas; lai vienoties par pirmo vizīti, vienmēr uzdod jautājumu uz kluba e‑pastu vai ierodies pēc vienojuma grafikā.
             </p>
           </details>
         </div>
@@ -303,16 +276,15 @@
 
       <section id="pieteikums" class="section form-section" aria-labelledby="signup-heading">
         <h2 id="signup-heading" class="section__heading section__heading--center">
-          <span class="accent-gold">Pieteikums uz izmēģinājuma nodarbību</span>
+          <span class="accent-gold">Pieteikums uz izmēģinājumu</span>
         </h2>
         <p class="form-intro">
-          Aizpildi formu kā paraugu (nav saites ar īstu serveri). Lauki un validācijas paziņojumus aprēķina
-          <code>js/script.js</code>.
+          Aizpildi laukus — parādās kopsavilkums lapā. Jautājumiem vienmēr var rakstīt arī uz zemāk dotā e‑pasta adresi.
         </p>
         <div class="form-shell">
           <form id="signup-form" class="signup-form" action="#" method="post" novalidate>
             <div id="signup-errors" class="form-errors" role="alert" aria-live="polite" hidden>
-              <strong>Pārbaudi laukos:</strong>
+              <strong>Trūkst vai lauks nekorekts:</strong>
               <ul id="signup-errors-list"></ul>
             </div>
 
@@ -325,27 +297,27 @@
                   type="text"
                   autocomplete="name"
                   maxlength="120"
-                  placeholder="Piem.: Lauma Bērziņa"
+                  placeholder="Krists Vilks"
                   required
                 />
               </div>
 
               <div>
-                <label for="email">E-pasta adrese</label>
+                <label for="email">E-pasts</label>
                 <input
                   id="email"
                   name="email"
                   type="email"
                   autocomplete="email"
                   maxlength="120"
-                  placeholder="piems@pastnieks.lv"
+                  placeholder="tavs.epasts@gmail.com"
                   required
                 />
               </div>
 
               <div>
-                <label for="phone">Tālrunis</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+371 20000000" />
+                <label for="phone">Tālrunis (ne obligāti)</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+371 …" />
               </div>
 
               <div>
@@ -354,30 +326,26 @@
               </div>
 
               <div>
-                <label for="level">Pašvērtējums līmenim</label>
+                <label for="level">Līmenis</label>
                 <select id="level" name="level" required>
-                  <option value="" disabled selected>Izvēlies...</option>
-                  <option value="beginner">Esmu iesācējs/-a</option>
-                  <option value="hobby">Treninos skatos kā hobijs</option>
-                  <option value="ring">Ir pieredze uz ringa vai sacensību vidē</option>
-                  <option value="return">Pauze no boksa — gribu atgriezties</option>
+                  <option value="" disabled selected>Izvēlies…</option>
+                  <option value="beginner">Iesācējs</option>
+                  <option value="hobby">Treinos kā hobijs</option>
+                  <option value="ring">Pieredze ringā vai sacīkšu vidē</option>
+                  <option value="return">Atgūšanās periods pēc pauzes</option>
                 </select>
               </div>
 
               <fieldset class="fieldset-plain">
-                <legend>Nodarbības veids</legend>
+                <legend>Pirmā nodarbība kā</legend>
                 <div class="radio-row-group">
                   <label class="radio-row">
-                    <input type="radio" name="plan" value="grupa" required />
-                    <span class="radio-label-text">Standarta grupā (līdz 12 cilvēkiem)</span>
-                  </label>
-                  <label class="radio-row">
-                    <input type="radio" name="plan" value="mini" />
-                    <span class="radio-label-text">Mini grupa vai pārim</span>
+                    <input type="radio" name="plan" value="grupa" required checked />
+                    <span class="radio-label-text">Grupā</span>
                   </label>
                   <label class="radio-row">
                     <input type="radio" name="plan" value="solo" />
-                    <span class="radio-label-text">Individuāli ar treneri</span>
+                    <span class="radio-label-text">Individuāli (sarakstīt vēlos)</span>
                   </label>
                 </div>
               </fieldset>
@@ -386,77 +354,60 @@
                 <legend>Intereses</legend>
                 <div class="check-group">
                   <label class="checkbox-row">
-                    <input type="checkbox" name="interest[]" value="pamati" data-caption="Pamati un tehnikas raundi" />
-                    <span class="checkbox-label">Pamati un tehnikas raundi</span>
+                    <input type="checkbox" name="interest[]" value="pamati" data-caption="Pamati" />
+                    <span class="checkbox-label">Tehniska pamata līnija</span>
                   </label>
                   <label class="checkbox-row">
-                    <input
-                      type="checkbox"
-                      name="interest[]"
-                      value="fitness"
-                      data-caption="Fiziskais līmenis / kardio"
-                    />
-                    <span class="checkbox-label">Fiziskais līmenis / kardio</span>
+                    <input type="checkbox" name="interest[]" value="fitness" data-caption="Fonds" />
+                    <span class="checkbox-label">Fiziskās sagādes fonds</span>
                   </label>
                   <label class="checkbox-row">
-                    <input type="checkbox" name="interest[]" value="sparing" data-caption="Pirmie pasākumi sparingam" />
-                    <span class="checkbox-label">Gatavojos kontrolētā spāringā</span>
+                    <input type="checkbox" name="interest[]" value="sparing" data-caption="Spārings" />
+                    <span class="checkbox-label">Kontroles spārings nākotnē</span>
                   </label>
                   <label class="checkbox-row">
-                    <input type="checkbox" name="interest[]" value="young" data-caption="Junioru programmas info" />
-                    <span class="checkbox-label">Interese par junioru līniju</span>
+                    <input type="checkbox" name="interest[]" value="young" data-caption="Jauniešu grupa (info)" />
+                    <span class="checkbox-label">Info par jauno sportistu piedāvājumu</span>
                   </label>
                 </div>
               </fieldset>
 
               <div>
-                <label for="comments">Komentārs treneriem</label>
-                <textarea
-                  id="comments"
-                  name="comments"
-                  rows="5"
-                  placeholder="Piem.: traumas vēsture, mērķi, ierasto treniņu laiks..."
-                  maxlength="900"
-                  required
-                ></textarea>
+                <label for="comments">Īsu piezīmi var te:</label>
+                <textarea id="comments" name="comments" rows="5" maxlength="900" placeholder="Piezīme trenerim…" required></textarea>
               </div>
 
               <label class="checkbox-row">
                 <input type="checkbox" name="agree" value="yes" />
-                <span class="checkbox-label">Es apliecinu, ka dati rakstīti patiesi un saprotu viettura demo raksturu.</span>
+                <span class="checkbox-label">Esmu ierakstījis patiesas ziņas un piekrītu, ka zemāk parādās kopsavilkums šajā lapā.</span>
               </label>
 
               <div class="form-submit-wrap">
-                <button type="submit" class="btn btn--primary btn--submit">Nosūtīt (demo — tikai uz ekrāna)</button>
+                <button type="submit" class="btn btn--primary btn--submit">Parādīt pieteikuma kopsavilkumu lapā</button>
               </div>
             </div>
           </form>
 
           <aside id="signup-result" class="form-result" role="status" aria-live="polite" hidden>
-            <h3 class="form-result__title">Pieteikuma kopsavilkums</h3>
+            <h3 class="form-result__title">Kopsavilkums uz ekrāna</h3>
             <dl id="signup-result-inner"></dl>
-            <p class="form-result__footnote">
-              Serveris netiek sasniegts: tie ir statiski demonstrētie dati. Īstam projektam vajag backendu vai
-              e-pasta starpnieku.
-            </p>
+            <p class="form-result__footnote">Uz saziņu jāiet caur kluba e‑pastu vai ierodoties vietā pēc vienojuma.</p>
           </aside>
         </div>
       </section>
 
       <section id="visit" class="section cta-band" aria-labelledby="visit-heading">
         <div class="cta-band__content">
-          <h2 id="visit-heading" class="cta-band__title">Ieņem savu stūrīti</h2>
+          <h2 id="visit-heading" class="cta-band__title">Uz tikšanos „13th Round”!</h2>
           <p class="cta-band__text">
-            Pieteicies augšējā blokā vai raksti tieši uz e-pasta paraugu. Pirmajā vizītē vienmēr ielūdzam kā īstu
-            boksu — arī tad, kad tā tikai līdz foto ierakstu galerijām.
+            Jautājumi un rezervējumi rakstīt uz e‑pastu. Precīzas zāles koordinātas Preiļos precizēt saziņā ar klubu.
           </p>
           <div class="cta-band__contacts">
-            <a class="btn btn--inverse" href="mailto:sveiki@13thround.lv">sveiki@13thround.lv</a>
-            <a class="contact-chip" href="tel:+37120000000">+371 2000 0000</a>
+            <a class="btn btn--inverse" href="mailto:w126raimonds@gmail.com">w126raimonds@gmail.com</a>
           </div>
           <p class="cta-band__address">
-            Adrese vietturos — ieraksti īstu pilsētu/pasta indeksu:<br />
-            „13th Round” līnijas zāles adrese piemērā<br />
+            <strong>Preiļi, Latvija</strong><br />
+            Boksa klubs „13th Round”
           </p>
         </div>
       </section>
@@ -466,12 +417,11 @@
         class="lightbox"
         role="dialog"
         aria-modal="true"
-        aria-label="Attēlu palielinājums"
+        aria-label="Palielināts attēls"
         aria-hidden="true"
       >
-        <button type="button" class="lightbox__close" aria-label="Aizvērt palielinājumu">&times;</button>
+        <button type="button" class="lightbox__close" aria-label="Aizvērt">&times;</button>
         <div class="lightbox__inner">
-          <!-- src tiek uzlikts tikai tad, kad nepieciešams; sākumā bez avota, lai nav tukšu pieprasījumu -->
           <img class="lightbox__img" alt="" width="1200" height="675" decoding="async" />
           <p class="lightbox__caption"></p>
         </div>
@@ -479,16 +429,8 @@
     </main>
 
     <footer class="footer">
-      <p><strong>13th Round</strong> — mācību tīmekļa vietne (izdomāts boksa klubs).</p>
-      <p class="footer__small">
-        Projektu var mitināt ar <a href="https://pages.github.com/">GitHub Pages</a>. Struktūra:
-        <code>index.html</code>, <code>css/style.css</code>, <code>js/script.js</code>, <code>images/gallery/</code>.
-      </p>
-      <p class="footer__small">
-        <strong>Atsauce uz attēliem šobrīd:</strong> mapē izmantotas paša uzdevuma ietvara SVG vietturos
-        <code>vietturis-01.svg … 06.svg</code> bez ārējām adresēm. Ja būs JPG vai citi attēli no interneta,
-        dokumentācijā jānorāda pirmavots kā prasītajā kritērijā „atsauces uz pirmavotiem”.
-      </p>
+      <p><strong>„13th Round”</strong> · boksa klubs · Preiļi</p>
+      <p class="footer__small">E‑pasts: <a href="mailto:w126raimonds@gmail.com">w126raimonds@gmail.com</a></p>
     </footer>
 
     <script src="js/script.js" defer></script>
