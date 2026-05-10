@@ -3,41 +3,151 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your name — simple site</title>
+    <title>13th Round — Boxing Club</title>
+    <meta
+      name="description"
+      content="13th Round Boxing Club — technical boxing, conditioning, and community for every level."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="header">
-        <p class="eyebrow">Hello</p>
-        <h1 class="title">A simple page on GitHub</h1>
-        <p class="lede">
-          Edit this file, push to GitHub, and turn on Pages in your repo
-          settings. The design stays quiet so your content stands out.
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav__brand" href="#">13th Round</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#training">Training</a>
+        <a href="#schedule">Schedule</a>
+        <a class="nav__cta" href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__badge">Est. boxing club</div>
+        <h1 id="hero-title" class="hero__title">
+          <span class="hero__title-line hero__title-line--gold">13th</span>
+          <span class="hero__title-line hero__title-line--white">Round</span>
+        </h1>
+        <p class="hero__tagline">
+          Twelve rounds decide the bout. Your extra round decides who you become.
+          Technical boxing, real conditioning, welcoming crew.
         </p>
-      </header>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#visit">Book a trial class</a>
+          <a class="btn btn--ghost" href="#schedule">See timetable</a>
+        </div>
+        <dl class="hero__stats">
+          <div class="hero__stat">
+            <dt>Open</dt>
+            <dd>6 days / week</dd>
+          </div>
+          <div class="hero__stat">
+            <dt>Levels</dt>
+            <dd>Beginner → Fight</dd>
+          </div>
+          <div class="hero__stat">
+            <dt>Coaching</dt>
+            <dd>Licensed coaches</dd>
+          </div>
+        </dl>
+      </section>
 
-      <main class="main">
-        <section class="card">
-          <h2>About</h2>
-          <p>
-            Replace this paragraph with a short bio or project description.
-            Keep lines reasonably short for comfortable reading on phones.
+      <section id="about" class="section section--split">
+        <div class="section__intro">
+          <h2 class="section__heading"><span class="accent-gold">The club</span></h2>
+          <p class="section__lede">
+            13th Round is a boxing gym built on fundamentals: footwork you can trust,
+            hands that stay busy, and lungs that last. No ego — just work.
           </p>
-        </section>
+        </div>
+        <ul class="pill-list">
+          <li class="pill pill--red">Small-group classes</li>
+          <li class="pill pill--teal">Open gym hours</li>
+          <li class="pill pill--violet">Youth &amp; adult</li>
+          <li class="pill pill--amber">Competition corner</li>
+        </ul>
+      </section>
 
-        <section class="card">
-          <h2>Links</h2>
-          <ul class="links">
-            <li><a href="https://github.com/">GitHub</a></li>
-            <li><a href="mailto:you@example.com">Email</a></li>
-          </ul>
-        </section>
-      </main>
+      <section id="training" class="section cards">
+        <h2 class="section__heading section__heading--center">
+          <span class="accent-crimson">What we train</span>
+        </h2>
+        <div class="card-grid">
+          <article class="feature-card feature-card--red">
+            <h3 class="feature-card__title">Boxing fundamentals</h3>
+            <p class="feature-card__text">
+              Stance, guard, distance, combos, and defence — drilled until they feel second nature.
+            </p>
+          </article>
+          <article class="feature-card feature-card--teal">
+            <h3 class="feature-card__title">Conditioning</h3>
+            <p class="feature-card__text">
+              Bag rounds, skips, sleds when we have floor space — cardio that feels like boxing, not boredom.
+            </p>
+          </article>
+          <article class="feature-card feature-card--gold">
+            <h3 class="feature-card__title">Sparring lab</h3>
+            <p class="feature-card__text">
+              Controlled rounds for intermediate members — coach-led, taped hands, monitored intensity.
+            </p>
+          </article>
+        </div>
+      </section>
 
-      <footer class="footer">
-        <p>Built for <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-      </footer>
-    </div>
+      <section id="schedule" class="section timetable">
+        <div class="timetable__inner">
+          <h2 class="section__heading">
+            <span class="accent-teal">This week</span>
+          </h2>
+          <p class="timetable__note">
+            Times are placeholders — swap for your real schedule when you go live.
+          </p>
+          <div class="timetable__rows">
+            <div class="timetable__row timetable__row--odd">
+              <span class="timetable__day">Mon / Wed</span>
+              <span class="timetable__slots">Early birds 06:30 · Evening 18:00 &amp; 19:15</span>
+            </div>
+            <div class="timetable__row">
+              <span class="timetable__day">Tue / Thu</span>
+              <span class="timetable__slots">Skills 17:30 · Bags &amp; burn 18:45</span>
+            </div>
+            <div class="timetable__row timetable__row--odd">
+              <span class="timetable__day">Fri</span>
+              <span class="timetable__slots">Fight shape 18:00 · Open floor 19:30</span>
+            </div>
+            <div class="timetable__row">
+              <span class="timetable__day">Sat</span>
+              <span class="timetable__slots">All-levels 09:30 · Coaches’ corner 11:00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit" class="section cta-band">
+        <div class="cta-band__content">
+          <h2 class="cta-band__title">Step into the corner</h2>
+          <p class="cta-band__text">
+            First session includes wraps tutorial and glove hire. Wear trainers you can pivot in.
+          </p>
+          <div class="cta-band__contacts">
+            <a class="btn btn--inverse" href="mailto:hello@13thround.example">hello@13thround.example</a>
+            <a class="contact-chip" href="tel:+441234567890">+44 1234 567 890</a>
+          </div>
+          <p class="cta-band__address">
+            Replace with your gym address<br />
+            Your City · Postcode
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><strong>13th Round</strong> · Boxing club</p>
+      <p class="footer__small">
+        Hosted on <a href="https://pages.github.com/">GitHub Pages</a> — edit <code>index.html</code> to update details.
+      </p>
+    </footer>
   </body>
 </html>
