@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="t3">
+  <title id="t3">Viettura attls 3</title>
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#134e4a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g3)"/>
+  <path d="M120 440 L680 440" stroke="#14b8a6" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <text x="400" y="320" fill="#f4f1ea" font-family="system-ui,Segoe UI,sans-serif" font-size="22" text-anchor="middle">Komanda · vietturis</text>
+</svg>

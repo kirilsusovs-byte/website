@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t1">
+  <title id="t1">Viettura attls 1  13th Round</title>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c2433"/>
+      <stop offset="50%" stop-color="#3730a3"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <rect x="80" y="80" width="1440" height="740" fill="none" stroke="rgba(251,191,36,0.35)" stroke-width="3" rx="20"/>
+  <text x="800" y="430" fill="#faf8f4" font-family="system-ui,Segoe UI,sans-serif" font-size="42" font-weight="700" text-anchor="middle">13th ROUND</text>
+  <text x="800" y="490" fill="#fbbf24" font-family="system-ui,Segoe UI,sans-serif" font-size="24" text-anchor="middle">viettura foto  nomaini ar savu JPG</text>
+</svg>

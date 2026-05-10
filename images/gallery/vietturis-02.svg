@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="t2">
+  <title id="t2">Viettura attls 2</title>
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <circle cx="400" cy="280" r="120" fill="none" stroke="rgba(245,158,11,0.45)" stroke-width="4"/>
+  <text x="400" y="465" fill="#e2e8f0" font-family="system-ui,Segoe UI,sans-serif" font-size="20" text-anchor="middle">vietturis-02</text>
+</svg>
